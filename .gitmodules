@@ -1,0 +1,8 @@
+[submodule "external/frisky-core"]
+	path = external/frisky-core
+	url = https://github.com/FriskyVN/frisky-core.git
+	branch = master
+
+[submodule "external/sdl2-vc"]
+	path = external/sdl2-vc
+	url = https://github.com/FriskyVN/sdl2-vc.git
