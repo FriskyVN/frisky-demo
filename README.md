@@ -20,7 +20,7 @@
 ### Update Submodules
 Submodules, once downloaded, may be updated to the most recent versions hosted on GitHub with the following command:
 ```shell
-git submodule update --recursive
+git submodule update --remote
 ```
 
 ## Build
