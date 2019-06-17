@@ -13,6 +13,9 @@ workspace "FriskyDemo"
   cppdialect "C++17"
   warnings   "Extra"
 
+  exceptionhandling "Off"
+  rtti "Off"
+
   filter { "configurations:Debug" }
     defines { "DEBUG" }
     symbols "On"
