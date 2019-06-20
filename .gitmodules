@@ -7,6 +7,10 @@
 	path = external/sdl2-vc
 	url = https://github.com/FriskyVN/sdl2-vc.git
 
+[submodule "external/sdl2image-vc"]
+	path = external/sdl2image-vc
+	url = https://github.com/FriskyVN/sdl2image-vc.git
+
 [submodule "external/lua-vc"]
 	path = external/lua-vc
 	url = https://github.com/FriskyVN/lua-vc.git
