@@ -11,6 +11,10 @@
 	path = external/sdl2image-vc
 	url = https://github.com/FriskyVN/sdl2image-vc.git
 
+[submodule "external/sdl2ttf-vc"]
+	path = external/sdl2ttf-vc
+	url = https://github.com/FriskyVN/sdl2ttf-vc.git
+
 [submodule "external/lua-vc"]
 	path = external/lua-vc
 	url = https://github.com/FriskyVN/lua-vc.git
