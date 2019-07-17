@@ -60,6 +60,7 @@ workspace "FriskyDemo"
   project "FriskyDemo"
     language   "C++"
     targetdir  "bin/%{cfg.buildcfg}/%{cfg.platform}"
+    debugdir   "bin/%{cfg.buildcfg}/%{cfg.platform}"
     targetname "friskydemo"
 
     files {
@@ -112,6 +113,7 @@ workspace "FriskyDemo"
     filter {}
 
     local cwd = os.getcwd()
+    local resources = cwd .. "\\resources"
     local lua       = cwd .. "\\external\\lua-vc\\lib\\"
     local sdl2      = cwd .. "\\external\\sdl2-vc\\lib\\"
     local sdl2image = cwd .. "\\external\\sdl2image-vc\\lib\\"
@@ -127,6 +129,7 @@ workspace "FriskyDemo"
       }
 
       postbuildcommands {
+        "xcopy /E /I /Y \"" .. resources .. "\" \"" .. dest .. "\\resources\"",
         "copy \"" .. lua       .. "x86\\lua53.dll\" \""      .. dest .. "\"",
         "copy \"" .. sdl2      .. "x86\\SDL2.dll\" \""       .. dest .. "\"",
         "copy \"" .. sdl2image .. "x86\\SDL2_image.dll\" \"" .. dest .. "\"",
@@ -142,6 +145,7 @@ workspace "FriskyDemo"
       }
 
       postbuildcommands {
+        "xcopy /E /I /Y \"" .. resources .. "\" \"" .. dest .. "\\resources\"",
         "copy \"" .. lua       .. "x64\\lua53.dll\" \""      .. dest .. "\"",
         "copy \"" .. sdl2      .. "x64\\SDL2.dll\" \""       .. dest .. "\"",
         "copy \"" .. sdl2image .. "x64\\SDL2_image.dll\" \"" .. dest .. "\"",
